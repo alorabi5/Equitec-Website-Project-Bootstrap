@@ -88,9 +88,8 @@ nav a:hover{
 /*  ---------------------- Intro Slide Section -----------------------   */
 
 .slide-section{
-    /* display: flex; */
+    display: flex;
     overflow: hidden;
-    
 }
 
 .intro-single-slide{
@@ -234,4 +233,180 @@ nav a:hover{
 
 .products-card a:hover{
     text-decoration: underline !important;
+}
+
+
+
+/*  ---------------------- Qoute Section -----------------------   */
+
+.get-qoute-section{
+    background-color: #4d8695;
+    padding: 50px 0;
+    color: white;
+}
+
+.get-qoute-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.get-qoute-section h2{
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.43);
+}
+
+#get-qoute-btn-sub-section a{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-family: 'Myriad Pro Regular';
+    font-size: 18px;
+    
+}
+
+#get-qoute-btn-sub-section a:hover{
+    color: #4d8695;
+    background-color: white;
+}
+
+
+
+/*  ---------------------- Tweets Section -----------------------   */
+
+.tweets-section{
+    background-image: url('https://www.equitec.in/images/tweet-by-ali-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tweets-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+
+
+/*  ---------------------- About Us Section -----------------------   */
+
+.about-us-section{
+    background-image: url('https://www.equitec.in/images/about-us-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+
+.about-us-body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 1220px !important;
+}
+
+.about-us-body .col-md-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 3% 0;
+
+}
+
+.about-us-btn a{
+    /* top: 0; */
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Myriad Pro Regular';
+    font-size: 18px;
+}
+
+.about-us-btn a:hover{
+    background-color: #d19c1f;
+}
+
+
+/*  ---------------------- Our Clients Section -----------------------   */
+
+.our-clients-section{
+    padding: 100px 0 50px;
+}
+
+.our-clients-locations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-clients-locations ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: end;
+    gap: 18px;
+    color: #808080;
+}
+
+.our-clients-locations ul li{
+    cursor: pointer;
+}
+
+.active-title-clients-option{
+    color: #d19c1f;
+}
+
+
+.our-clients-logos-container{
+    /* display: b; */
+    max-width: 1302px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.our-clients-logos-group{
+    display: flex;
+    align-items: center;
+}
+
+.our-clients-logos-group img{
+    filter: grayscale(1);
+}
+
+.our-clients-logos-group img:hover{
+    filter: grayscale(0);
+}
+
+.our-clientele-section-logo{
+    width: 256px !important;
+}
+
+.our-clientele-section-logo img{
+    max-width: 100%;
+    height: auto;
+    margin: auto !important;
+}
+
+.our-clients-logos-container .slick-track{
+    display: flex !important;
+    align-items: center;
+}
+
+.hidden-clients {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+
+footer{
+    background-color: #f3f5f7;
+
 }
