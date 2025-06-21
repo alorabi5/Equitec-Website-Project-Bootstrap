@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    list-style: none;
+}
+
+header a{
+    color: #222222;
+    text-decoration: none;
+}
+
+
+/*  ---------------------- Sub Nav Section -----------------------   */
+
+.contact-info{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info a{
+    text-decoration: none;
+    padding-right: 36px;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
+    color: #d19c1f;
+}
+
+.social-links{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: end;
+    gap: 5px;
+}
+
+
+
+/*  ---------------------- Nav Section -----------------------   */
+
+nav{
+    padding: 10px 0;
+    border-top: 1px solid rgba(34, 34, 34, 0.13);
+    border-bottom: 1px solid rgba(34, 34, 34, 0.13);
+
+}
+
+nav .container .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+
+    
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: end;
+    gap: 54px;
+}
+
+nav a:hover{
+    border-bottom: 4px solid #d19c1f;
+    /* position:static; */
+    padding-bottom: 26px;
+}
+
+#client-login{
+    background-color: #d19c1f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+#client-login:hover{
+    background-color: #4d8695;
+    border-bottom: none;
+}
+
+/*  ---------------------- Intro Slide Section -----------------------   */
+
+.slide-section{
+    /* display: flex; */
+    overflow: hidden;
+    
+}
+
+.intro-single-slide{
+    display: flex !important;
+    align-items: center;
+    box-sizing: border-box;
+
+    max-width: 1090px !important;
+    min-height: 450px;
+}
+
+    .left-slide-content{
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    gap: 30px;
+}
+
+.left-slide-content ul{
+
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-links a{
+    padding: 15px 30px;
+    font-family: 'Myriad Pro Regular';
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+#slide-link-dark{
+    background-color: black;
+    color: white;
+}
+
+#slide-link-light{
+    color: black;
+
+}
+
+.slide-links a:hover{
+    color: white !important;
+    background-color: #d19c1f !important;
+    border: 1px solid transparent !important;
+    position: static;
+
+}
+
+
+
+/*  ---------------------- Slick Section -----------------------   */
+
+.slick-dots{
+    display: block !important;
+    left: 9% !important;
+    text-align: left !important;
+}
+
+
+
+/*  ---------------------- Vision Section -----------------------   */
+
+.vision-cards{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.vision-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    text-align: center;
+    width: 25% !important;
+    max-width: 218px !important;
+    margin: 0 2% 5%;
+    margin-bottom: 5%;
+}
+
+.vision-card img{
+    width: 60px;
+    height: 60px;
+}
+
+.vision-card img:hover{
+    filter: invert(59%) sepia(62%) saturate(530%) hue-rotate(4deg) brightness(100%) contrast(95%);
+}
+
+
+
+/*  ---------------------- Vision Section -----------------------   */
+
+.products-cards{
+    display: flex;
+    text-align: center;
+}
+
+.products-card{
+    width: 33%;
+    margin: 0 12px;
+    background-color: #F3F5F7 !important;
+    position: relative;
+}
+
+.products-card:hover{
+    background-color: #d19c1f !important;
+    color: white;
+}
+
+.products-card img{
+    border-bottom: 5px solid #d19c1f;
+}
+
+.products-card a img{
+    width: 26px;
+    height: 26px;
+    border-bottom: 0;
+}
+
+.products-card a{
+    cursor: pointer;
+}
+
+.products-card:hover #product-img-hover{
+    filter: invert();
+}
+
+.products-card:hover a{
+    color: white;
+}
+
+.products-card a:hover{
+    text-decoration: underline !important;
+}
