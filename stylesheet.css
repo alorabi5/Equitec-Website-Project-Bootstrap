@@ -288,6 +288,13 @@ nav a:hover{
     text-align: center;
 }
 
+/* .products-cards .card-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+} */
+
 .products-card{
     width: 33%;
     margin: 0 12px;
