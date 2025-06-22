@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lora', serif; 
+
 }
 
 header li{
@@ -12,6 +14,36 @@ header a{
     text-decoration: none;
 }
 
+h2{
+    width: fit-content;
+}
+
+main h2::before{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    bottom: 0;
+}
+
+main h2::after{
+    content: "";
+    background-color: #d19c1f;
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+}
+
+#dont-apply-lines::before{
+    height: 0;;
+}
+
+#dont-apply-lines::after{
+    height: 0;;
+}
 
 /*  ---------------------- Sub Nav Section -----------------------   */
 
@@ -191,6 +223,14 @@ nav a:hover{
 
 
 /*  ---------------------- Vision Section -----------------------   */
+
+.products-section{
+    padding-bottom: 104px;
+}
+
+.products-section h2{
+    margin-bottom: 32px;
+}
 
 .products-cards{
     display: flex;
@@ -406,7 +446,97 @@ nav a:hover{
 }
 
 
+
+/*  ---------------------- Footer Section -----------------------   */
+
 footer{
     background-color: #f3f5f7;
 
+}
+
+.footer-quick-links-address{
+    padding: 24px 0 10px 0;
+    margin-top: 50px;
+    max-width: 1220px !important;
+}
+
+.footer-logo{
+    margin-bottom: 37px;
+}
+
+#footer-logo-img{
+    padding-top: 33px;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.footer-cards{
+    font-size: 14px;
+    align-items: start;
+    
+}
+
+.footer-cards ul{
+    list-style: none;
+}
+
+.footer-cards li{
+    font-family:'Open Sans', sans-serif;
+    margin-bottom: 12px;
+}
+
+.footer-cards a{
+    font-family:'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-cards a:hover{
+    color: #d19c1f;
+    text-decoration: underline;
+}
+
+.footer-cards h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.footer-copyright{
+    padding: 24px 12px;
+    border-top: 1px solid #dcdee0;
+}
+
+.footer-copyright p{
+    font-size: 13px;
+    font-family:'Open Sans', sans-serif;
+    color: #212529;
+}
+
+
+
+/*  ---------------------- Scroll Up Section -----------------------   */
+
+#scroll-up{
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    margin-right: 5%;
+}
+
+#scroll-up img{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+/*  ---------------------- Mobile Scroll Up Section -----------------------   */
+
+    #scroll-up{
+    width: fit-content !important;
+    margin-right: 10% !important;
+    }
 }

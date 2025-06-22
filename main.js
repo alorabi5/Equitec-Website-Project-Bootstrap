@@ -1,6 +1,9 @@
 const clientsLocations = document.querySelectorAll(".our-clients-locations ul li");
 const clientLogosList = document.querySelectorAll(".our-clients-logos-container");
 
+const scrollUp = document.getElementById('scroll-up');
+
+
 const clientsRegion = (event) => {
         AOS.init();
 
@@ -19,3 +22,13 @@ const clientsRegion = (event) => {
         // console.log(selectedClientsLocationList)
     }
 }
+
+
+// Scroll Up Functions
+window.addEventListener("scroll", () => {
+    if(window.pageYOffset > 100)
+        scrollUp.style.display = 'block';
+    else
+        scrollUp.style.display = 'none';
+
+});

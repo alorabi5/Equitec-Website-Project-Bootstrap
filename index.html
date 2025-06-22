@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -81,7 +85,7 @@
                                     <li><a href="#products">HRMS</a></li>
                                 </ul> -->
                             </li>
-                            <li><a href="#clients">Our Client</a></li>
+                            <li><a href="#our-clients">Our Client</a></li>
                             <li><a href="#contact">Contact Us</a></li>
                             <li><a id="client-login" href="https://support.equitec.in" target="_blank">Client Login</a></li>
                         </ul>
@@ -269,7 +273,7 @@
             </div>
         </section>
 
-        <section class="container-fulid get-qoute-section" id="contact">
+        <section class="container-fulid get-qoute-section">
             <div class="container get-qoute-body" data-aos="fade-up">
                 <div id="get-qout-text-sub-section" data-aos="fade-right">
                     <h2 id="dont-apply-lines">Add our products in your Business</h2>
@@ -319,8 +323,9 @@
                     </div>
                     
                     <div id="about-btn" class="col-md-12 about-us-btn" data-aos="fade-up">
-                        <a href="#">Know More</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">Know More</a>
                     </div>
+                    <div ></div>
 
                 </div>
 
@@ -354,12 +359,12 @@
             </div>
         </section>
 
-        <section class="container-fulid our-clients-section">
+        <section class="container-fulid our-clients-section" id="our-clients">
             <div class="container our-clients-body">
                 
                 <div class="row our-clients-title align-items-center">
                 
-                    <div class="col-lg-4"><h2>Our Clientele</h2></div>
+                    <div class="col-lg-4"><h2 id="dont-apply-lines" >Our Clientele</h2></div>
 
 
                     <div class="col-lg-8 text-end our-clients-locations">
@@ -424,54 +429,103 @@
             </div>
         </section>
     </main>
-    <footer class="container-fulid">
-        <div class="container">
-            <div class="container footer-quick-links-address">
-                <img id="footer-logo-img" src="https://www.equitec.in/images/equitec-logo.png" alt="">
-                <div class="footer-cards" data-aos="fade-up">
-                <div class="footer-card">
-                    <ul>
-                        <h2>India</h2>
-                        <li>4B/44 4th Floor, Phoenix Paragon Plaza, LBS Marg, Kurla west, Mumbai 400070.</li>
-                        <li><a href="tel:02246059273">02246059273</a></li>
-                        <li><a href="mailto:software@equitec.in">software@equitec.in</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-card">
-                    <ul>
-                        <h2>Bahrain</h2>
-                        <li>303-A Yateem Center Road 385, Block 304 Manama Center, Bahrain.</li>
-                        <li><a href="tel:+973 3209 4836">+973 3209 4836</a></li>
-                        <li><a href="mailto:software@equitec.in">software@equitec.in</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-card">
-                    <ul>
-                        <h2>Quick Links</h2>
-                        <li><a href="#products">Our Products</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="mailto:support@equitec.in">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-card separate-footer-links">
-                    <ul>
-                        <li><a href="#!">Terms & Condition</a></li>
-                        <li><a href="#!">Sitemap</a></li>
-                        <li><a href="#!">Privacy Policy</a></li>
-                    </ul>
-                </div>
+    <footer class="container-fulid" id="contact">
+        <div class="container footer-quick-links-address">
+            <div class="row footer-logo" data-aos="fade-up">
+                <div class="col-md-12 text-center">
+                    <img id="footer-logo-img" src="https://www.equitec.in/images/equitec-logo.png" alt="">
                 </div>
             </div>
 
-            <div class="container footer-copyright">
-                <p style="width: 100%; margin: 0; text-align: center;">©2025 Equitec Technology for Finance</p>
+
+            <div class="row footer-cards" data-aos="fade-up">
+            <div class="col-lg-4 footer-card">
+                <ul>
+                    <h2>India</h2>
+                    <li>4B/44 4th Floor, Phoenix <br> Paragon Plaza, LBS Marg, Kurla <br> west, Mumbai 400070.</li>
+                    <li><a href="tel:02246059273">02246059273</a></li>
+                    <li><a href="mailto:software@equitec.in">software@equitec.in</a></li>
+                </ul>
             </div>
 
+            <div class="col-lg-4 footer-card">
+                <ul>
+                    <h2>Bahrain</h2>
+                    <li>303-A Yateem Center Road 385, <br> Block 304 Manama Center, Bahrain.</li>
+                    <li><a href="tel:+973 3209 4836">+973 3209 4836</a></li>
+                    <li><a href="mailto:software@equitec.in">software@equitec.in</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 footer-card">
+                <ul>
+                    <h2>Quick Links</h2>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="mailto:support@equitec.in">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 footer-card separate-footer-links">
+                <ul>
+                    <h2 style="opacity: 0;">Quick Links</h2>
+                    <li><a href="#!">Terms & Condition</a></li>
+                    <li><a href="#!">Sitemap</a></li>
+                    <li><a href="#!">Privacy Policy</a></li>
+                </ul>
+            </div>
+            </div>
         </div>
+
+        <div class="container footer-copyright">
+            <p style="width: 100%; margin: 0; text-align: center;">©2025 Equitec Technology for Finance</p>
+        </div>
+
     </footer>
+
+
+    <div class="modal" id="aboutModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <div class="modal-image-content">
+                        <img src="https://www.equitec.in/images/about%20us.PNG" alt="">
+                    </div>
+
+                    <div class="modal-text-content">
+                        <p>Equitec is an established software development company operating from four key strategic locations viz Mumbai, Bahrain, Singapore and Houston. <br><br>
+                        
+                        Equitec’s primary focus is banking and Finance domain. It has been founded by ex-employees of JPMorgan, with combined experience of more than 30 years in Business Technology. <br><br>
+                        
+                        Since inception Equitec amassed tremendous success within the Banking and Finance industry . Through the years Equitec perfected and expanded its list of solutions and services to cater to various other industries. <br><br>
+                        
+                        Today Equitec’s strength lies in the fact that it has solutions and services that meet client needs and budgets. <br><br>
+                        
+                        There is ample amount of flexibility in each of our solutions to make way for future upgrades and enhancements. This prolongs life of product and increases return on investment.
+                        </p>
+                    </div>
+                        
+                        
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <a href="#" id="scroll-up" data-aos="fade-up">
+        <img src="https://www.equitec.in/images/top.png" alt="">
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
