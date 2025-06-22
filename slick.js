@@ -8,7 +8,6 @@ $(".our-clients-logos-group").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    infinite: false,
     autoplay: true,
     responsive: [
         {
@@ -36,3 +35,8 @@ $(".our-clients-logos-group").slick({
 
 
 $(".about-members-mobile").slick();
+
+$(".vision-cards-mobile").slick({
+    arrows: false,
+    dots: true
+});
