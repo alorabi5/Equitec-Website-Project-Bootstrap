@@ -74,6 +74,10 @@ main h2::after{
 
 /*  ---------------------- Nav Section -----------------------   */
 
+#mobile-burger-nav{
+    display: none;
+}
+
 nav{
     padding: 10px 0;
     border-top: 1px solid rgba(34, 34, 34, 0.13);
@@ -115,6 +119,44 @@ nav a:hover{
 #client-login:hover{
     background-color: #4d8695;
     border-bottom: none;
+}
+
+#product-hover-menu{
+    padding: 0;
+    display: none;
+    gap: 0;
+    position: absolute;
+    flex-direction: column;
+}
+
+#products-hover:hover #product-hover-menu{
+    display: block;
+}
+
+#product-hover-menu li:hover{
+    background-color: #d19c1f;
+    padding-bottom: 0;
+    color: white;
+}
+
+#product-hover-menu a:hover{
+    color: white !important;
+    border-bottom: none !important;
+    padding: 0;
+}
+
+#product-hover-menu li{
+    width: 100%;
+    display: block;
+    padding: 8px 20px;
+    background-color: #E7E7E7;
+
+
+}
+
+
+#mobile-nav{
+    display: none;
 }
 
 /*  ---------------------- Intro Slide Section -----------------------   */
@@ -341,14 +383,19 @@ nav a:hover{
 }
 
 
-.about-us-body{
+.about-us-body-desktop{
     display: flex;
     align-items: center;
     text-align: center;
     max-width: 1220px !important;
 }
 
-.about-us-body .col-md-3{
+.about-us-title{
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-body-desktop .col-md-3{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,6 +419,15 @@ nav a:hover{
 .about-us-btn a:hover{
     background-color: #d19c1f;
 }
+
+.about-members-desktop{
+    display: flex;
+}
+
+.about-us-body-mobile{
+    display: none;
+}
+
 
 
 /*  ---------------------- Our Clients Section -----------------------   */
@@ -533,10 +589,283 @@ footer{
 
 @media screen and (max-width: 800px) {
 
+    h1, h2, h3{
+        padding: 5px 0;
+    }
+/*  ---------------------- Mobile Nav Section -----------------------   */
+
+    .navbar .col-md-3{
+        text-align: center;
+    }
+    .sub-nav{
+        display: none;
+    }
+
+    nav{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li{
+        display: contents;
+    }
+
+    nav img{
+        width: 169px !important;
+        height: auto;
+    }
+
+
+/*  ---------------------- Mobile Nav Bar Section -----------------------   */
+
+    *{
+        overflow-x: hidden;
+    }
+    nav ul{
+        display: none;
+    }
+
+    #mobile-nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 24px;
+        border-top: 1px solid rgba(34, 34, 34, 0.13);
+        border-bottom: 1px solid rgba(34, 34, 34, 0.13);
+        margin: 20px 0;
+    }
+
+    #mobile-nav div{
+        width: max-content !important;
+        overflow-x:visible !important;
+    }
+
+    #client-login{
+        text-decoration: none;
+        font-size: 18px;
+        padding: 6px 30px;
+    }
+
+    #mobile-nav img{
+        width: 19px !important;
+        height: 19px;
+    }
+
+    #burger-menu-icon img{
+        width: 20px !important;
+        height: 20px !important;
+        
+    }
+
+
+
+/*  ---------------------- Mobile Intro Slides Section -----------------------   */
+
+    .intro-single-slide{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .slide-links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .slide-links a{
+        margin-bottom: 5%;
+    }
+
+    .left-slide-content{
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .intro-single-slide img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+/*  ---------------------- Mobile Nav Screen Section -----------------------   */
+
+    .navbar img{
+        text-align: center;
+    }
+    #mobile-burger-nav{
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    #mobile-burger-nav:first-child, #mobile-burger-nav:nth-child(2){
+        width: 20% !important;
+    }
+
+    #mobile-burger-nav-content{
+        display: flex;
+        overflow: hidden;
+        margin: 0 auto !important;
+        flex-direction:  column;
+        text-align: center;
+        list-style: none;
+        
+    }
+
+    #mobile-burger-nav-content img{
+        max-width: 40% !important;
+        height: auto;
+        margin: 0 auto 10%;
+        
+        
+    }
+
+    #mobile-burger-nav-content ul{
+        list-style-type: none;
+        color: #d19c1f;
+        padding: 0;
+        font-size: 19px;
+        font-family: serif;
+    }
+
+    #mobile-burger-nav-content li{
+        padding-top: 10px;
+    }
+
+    #mobile-burger-nav-content a{
+        color: #d19c1f;
+        text-decoration: none;
+    }
+
+    .mobile-burger-nav-header{
+        padding: 10px 10px 0 0 !important;
+        
+        text-align: right;
+        
+    }
+
+
+
 /*  ---------------------- Mobile Scroll Up Section -----------------------   */
 
     #scroll-up{
     width: fit-content !important;
     margin-right: 10% !important;
     }
+
+
+
+/*  ---------------------- Mobile Products Section -----------------------   */
+
+    .products-section h2{
+        margin: 8% auto;
+    }
+    .products-cards{
+        flex-direction: column;
+    }
+
+    .products-card{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+
+
+/*  ---------------------- Mobile Qoutation Section -----------------------   */
+
+    .get-qoute-body{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #get-qout-text-sub-section{
+        margin: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #get-qout-text-sub-section h2{
+        font-size: 27.94px;
+    }
+
+    #get-qoute-btn-sub-section{
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+
+/*  ---------------------- Mobile About Us Section -----------------------   */
+
+    .about-us-body-desktop{
+        display: none;
+    }
+
+    .about-us-body-mobile{
+        display: block;
+        padding: 100px 0;
+    }
+
+    .about-members-mobile .about-us-member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+/*  ---------------------- Mobile Tweets Section -----------------------   */
+
+    .tweets-body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tweets-title-section{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .twitter-container{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+/*  ---------------------- Mobile Our Clients Section -----------------------   */
+
+    .our-clients-title h2{
+        margin: 5% auto;
+    }
+
+    .our-clients-locations{
+        width: 100%;
+        height: auto !important;
+        padding: 0;
+    }
+
+    .our-clients-locations ul li{
+        width: 100%;
+        height: auto !important;
+    }
+
 }

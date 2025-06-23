@@ -79,11 +79,11 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li id="products-hover"><a href="#products">Our Products</a>
-                                <!-- <ul id="product-hover-menu">
+                                <ul id="product-hover-menu">
                                     <li><a href="#products">D.R.E.A.M.S</a></li>
                                     <li><a href="#products">PCFS</a></li>
                                     <li><a href="#products">HRMS</a></li>
-                                </ul> -->
+                                </ul>
                             </li>
                             <li><a href="#our-clients">Our Client</a></li>
                             <li><a href="#contact">Contact Us</a></li>
@@ -96,6 +96,24 @@
 
             </div>
         </nav>
+
+
+        <div id="mobile-nav">
+        <div id="burger-menu-icon">
+            <img src="https://www.equitec.in/images/menu.png" alt="" >
+        </div>
+
+        <div>
+            <a href="tel:02246059273"><img src="https://www.equitec.in/images/phone.png" alt=""></a>
+        </div>
+
+        <div>
+            <a id="client-login" href="https://support.equitec.in" target="_blank">Client Login</a>
+        </div>
+    </div>
+
+
+
     </header>
     <main>
         <section class="container-fulid slide-section">
@@ -235,7 +253,7 @@
                             efforts of users we managed..... to launch our first product 
                             in just 6 months.</p>
 
-                            <a id="produce-dreem-btn"> Know More  
+                            <a id="product-dreem-btn" data-bs-toggle="modal" data-bs-target="#productDreemModal"> Know More  
                                 <img id="product-img-hover" src="https://www.equitec.in/images/side-aarow%20(1).svg" alt="">
                             </a>
 
@@ -251,7 +269,7 @@
                             multiple uploads of the same company Easy to use 
                             Extraction tools allows users to do analysis</p>
 
-                            <a id="product-equibase-btn"> Know More  
+                            <a id="product-equibase-btn" data-bs-toggle="modal" data-bs-target="#productEquibaseModal"> Know More  
                                 <img id="product-img-hover" src="https://www.equitec.in/images/side-aarow%20(1).svg" alt="">
                             </a>
                     </div>
@@ -265,7 +283,7 @@
                             Conference Management | Client profiling
                             MIFD II support</p>
 
-                            <a id="prodcut-equity-monitor-btn"> Know More  
+                            <a id="prodcut-equity-monitor-btn" data-bs-toggle="modal" data-bs-target="#prodcutEquityMonitorModal"> Know More  
                                 <img id="product-img-hover" src="https://www.equitec.in/images/side-aarow%20(1).svg" alt="">
                             </a>
                     </div>
@@ -285,11 +303,15 @@
             </div>
         </section>
 
+
+
         <section class="container-fulid about-us-section">
-            <div class="container about-us-body" id="about">
+            <div class="container about-us-body-desktop" id="about">
+
                 <div class="row">
                     <div class="col-md-12 about-us-title"><h2 data-aos="fade-up">About Us</h2></div>
                 
+                    <div class="about-members-desktop">
                     <div class="col-md-3">
                         <div class="col-md-3 about-us-member" data-aos="fade-up" data-aos-duration="1000">
                             <img src="https://www.equitec.in/images/ali-sir.png" alt=""> 
@@ -321,6 +343,10 @@
                             <h4>Technical Architect</h4>
                         </div>
                     </div>
+                    </div>
+
+                    
+
                     
                     <div id="about-btn" class="col-md-12 about-us-btn" data-aos="fade-up">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">Know More</a>
@@ -329,13 +355,63 @@
 
                 </div>
 
+
+                
+                
+                
+
             </div>
+
+
+            <!-- --------------------  Mobile ----------------------- -->
+            <div class="about-us-body-mobile">
+                    <div class="col-md-12 about-us-title"><h2 data-aos="fade-up">About Us</h2></div>
+                    <div class="about-members-mobile">
+                    <div class="col-md-3">
+                        <div class="about-us-member aos-init aos-animate">
+                            <img src="https://www.equitec.in/images/ali-sir.png" alt=""> 
+                            <h3>Ali Raza Nayani</h3> 
+                            <h4>CEO</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="about-us-member aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                            <img src="https://www.equitec.in/images/muzaffar-sir.png" alt=""> 
+                            <h3>Muzaffar Dodhiya</h3> 
+                            <h4>Business Head (DREAMS 365)</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="about-us-member aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
+                            <img src="https://www.equitec.in/images/aasihq-sir.png" alt=""> 
+                            <h3>Ashiq Nayani</h3> 
+                            <h4>COO</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="about-us-member aos-init aos-animate" data-aos="fade-up" data-aos-duration="4000">
+                            <img src="https://www.equitec.in/images/asif-sir.png" alt=""> 
+                            <h3>Asif Shakir</h3> 
+                            <h4>Technical Architect</h4>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="about-btn" class="col-md-12 d-flex justify-content-center about-us-btn" data-aos="fade-up">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">Know More</a>
+                    </div>
+                    
+                </div>
+                <!-- --------------------------------------------------------------- -->
         </section>
 
         <section class="container-fulid tweets-section">
             <div class="container tweets-body">
 
-                <div class="tweets-title-section">
+                <div class="tweets-title-section" data-aos="fade-up">
                     <img src="https://www.equitec.in/images/tweet-section-icon.png" alt="">
                     <p>Tweet’s by</p>
                     <h2 id="dont-apply-lines">Mr Ali Raza</h2>
@@ -362,7 +438,7 @@
         <section class="container-fulid our-clients-section" id="our-clients">
             <div class="container our-clients-body">
                 
-                <div class="row our-clients-title align-items-center">
+                <div class="row our-clients-title align-items-center" data-aos="fade-up">
                 
                     <div class="col-lg-4"><h2 id="dont-apply-lines" >Our Clientele</h2></div>
 
@@ -493,11 +569,11 @@
                 </div>
 
                 <div class="modal-body">
-                    <h4 class="modal-title">Modal Heading</h4>
+                
                     <div class="modal-image-content">
                         <img src="https://www.equitec.in/images/about%20us.PNG" alt="">
                     </div>
-
+                    
                     <div class="modal-text-content">
                         <p>Equitec is an established software development company operating from four key strategic locations viz Mumbai, Bahrain, Singapore and Houston. <br><br>
                         
@@ -510,8 +586,7 @@
                         There is ample amount of flexibility in each of our solutions to make way for future upgrades and enhancements. This prolongs life of product and increases return on investment.
                         </p>
                     </div>
-                        
-                        
+                
                 </div>
 
 
@@ -519,7 +594,218 @@
             </div>
         </div>
     </div>
+</div>
 
+
+
+<div id="mobile-burger-nav">
+        <div class="mobile-burger-nav-header">
+            <span class="close">&times;</span>
+        </div>
+        <div id="mobile-burger-nav-content">
+            <img src="https://www.equitec.in/images/equitec-logo.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us-body-mobile">About Us</a></li>
+                <li id="products-hover"><a href="#products">Our Products</a>
+                    <ul id="product-hover-menu">
+                        <li><a href="#products">D.R.E.A.M.S</a></li>
+                        <li><a href="#products">PCFS</a></li>
+                        <li><a href="#products">HRMS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#our-clients">Our Client</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+<div class="modal" id="productDreemModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-image-content">
+                <img src="https://www.equitec.in/images/new.PNG" alt="">
+            </div>
+
+            <div class="modal-text-content">
+                <h4>Introducing DREAMS Equity Research ERP Solution: Empowering Your Investment Research Workflow</h4>
+                <p>
+                    Take your investment research to new heights with DREAMS, our cutting-edge equity research platform. 
+                    Designed to streamline the research process and optimize content creation, 
+                    DREAMS is your ultimate solution for efficient, cost-effective, and user-friendly equity research.
+                </p>
+
+                <h4>Key Features of DREAMS:</h4>
+
+                <ul>
+                    <li>Content Creation:</li>
+                    <p>
+                        With DREAMS, crafting insightful investment research has never been easier. 
+                        Our intuitive platform provides a seamless content creation experience, 
+                        allowing you to produce high-quality reports and analysis efficiently.
+                    </p>
+                    <li>Template Management:</li>
+                    <p>
+                        Save time and enhance consistency with our powerful template management feature. 
+                        DREAMS enables you to create and customize templates that align with your unique research requirements. 
+                        Maintain a standardized format across your reports effortlessly.
+                    </p>
+                    <li>Equibase - Financial Data Management:</li>
+                    <p>
+                        Accessing and managing financial data is a breeze with DREAMS. 
+                        Our integrated Equibase feature ensures that you have a centralized hub for all your financial data needs. 
+                        Say goodbye to data discrepancies and hello to accurate, reliable, and up-to-date information.
+                    </p>
+                    <li>Workflow &amp; Compliance:</li>
+                    <p>
+                        Stay organized and maintain compliance with DREAMS' robust workflow management capabilities. 
+                        Seamlessly track the progress of your research projects, assign tasks, and collaborate with team members, 
+                        all within a single platform. Ensure that your research adheres to regulatory guidelines effortlessly.
+                    </p>
+                    <li>Distribution:</li>
+                    <p>
+                        Share your research with ease using DREAMS' efficient distribution tools. 
+                        Our platform enables you to disseminate your reports and analysis to clients, colleagues, 
+                        and stakeholders seamlessly. Expand your reach, enhance engagement, and make an impact with your research.
+                    </p>
+                </ul>
+
+                <h4>Experience the Power of DREAMS:</h4>
+                <ul>
+                    <li>Low-Cost Solution:</li>
+                    <p>
+                        We understand the importance of cost-effectiveness. DREAMS offers a cost-efficient solution that doesn't compromise on functionality or quality. Maximize your research budget and achieve optimal returns on investment.
+                    </p>
+                    <li>Quick Implementation:</li>
+                    <p>
+                        Time is of the essence. DREAMS boasts a rapid implementation process, allowing you to get up and running swiftly. Experience the benefits of our platform without the hassle of lengthy setup procedures.
+                    </p>
+                    <li>User-Friendly Interface:</li>
+                    <p>
+                        DREAMS prioritizes user experience. Our intuitive interface ensures that you can navigate the platform effortlessly, regardless of your technical expertise. Spend more time on research and less on learning complex systems.
+                    </p>
+                    <li>Multi-Lingual Configurability:</li>
+                    <p>
+                        Reach a global audience with ease. DREAMS supports multi-lingual configurations, allowing you to cater to diverse markets and expand your research penetration effortlessly.
+                    </p>
+                    <li>Client Manager:</li>
+                    <p>
+                        Stay connected with your clients and manage relationships effectively using DREAMS' client management feature. Maintain a comprehensive view of your client interactions, track their preferences, and deliver personalized research experiences.
+                    </p>
+
+                </ul>
+                <h4>Discover the Future of Equity Research with DREAMS:</h4>
+                <p>Unlock the full potential of your investment research workflow with DREAMS Equity Research ERP Solution. 
+                    Experience cost-effectiveness, efficiency, and unparalleled ease of use. 
+                    Contact us to schedule a personalized demo. <br><br><br>
+                
+                    Elevate your equity research to new heights with DREAMS. 
+                    Optimize your content creation, streamline workflows, 
+                    and deliver impactful research that drives success. 
+                    Start your journey with DREAMS today.
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="productEquibaseModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-image-content">
+                <img src="https://www.equitec.in/images/product-img-2.png" alt="">
+            </div>
+
+            <div class="modal-text-content">
+                <h4>Equibase</h4>
+                <ul>
+                    <li>Data normalised based on various accounting global standards</li>
+                    <li>Validations included ensuring data is accurate and relevant</li>
+                    <li>Ability to recalculate price related metrics, ensuring data uploaded is always fresh</li>
+                    <li>Ability to store multiple uploads of the same company</li>
+                    <li>Easy to use Extraction tools allows users to do analysis and further research</li>
+                    <li>Comparative study, creating aggregates, sector analysis, sensitivity analysis etc. can be carried out with ease</li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="prodcutEquityMonitorModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-image-content">
+                <img src="https://www.equitec.in/images/HRMImage.jpg" alt="">
+            </div>
+
+            <div class="modal-text-content">
+                <h4>HRMS</h4> <br><br>
+                <p>
+                    Human Resource Management being a challenge for almost all verticals and sectors of
+                    business, we developed a solution to lessen the hassles of both Employers and
+                    Employees. HRMS being an intranet solution is accessible to all sections of the
+                    company and brings transparency in the company.
+                </p> <br> <br>
+
+                <ul>
+                    <li>Salary &amp; Job History</li>
+
+                    <p>
+                        Documents all salary and job changes. View the salary
+                        history of each employee online including salary, bonuses and all deductions.
+                        Quickly view work history such as promotions and length of employment in a
+                        position.
+                    </p>
+                    <li>Training, Skills and Awards</li>
+                    <p>
+                        Track individual skills, store required courses,
+                        certifications and grades received. Document all awards, accomplishments and
+                        recognition each employee has received over the years
+                    </p>
+
+                    <li>Track Vacation, Leaves and Attendance</li>
+                    <p>
+                        You don't have to work with a
+                        complicated spreadsheet again. Input your company's vacation and leave policies
+                        and the solution will track the number of days available based on
+                        years of service. Spot absenteeism issues.
+                    </p>
+                </ul>
+
+                
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
 
 
 

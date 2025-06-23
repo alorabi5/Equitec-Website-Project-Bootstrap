@@ -34,3 +34,5 @@ $(".our-clients-logos-group").slick({
     ]
 });
 
+
+$(".about-members-mobile").slick();
